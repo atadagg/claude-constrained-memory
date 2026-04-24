@@ -4,7 +4,7 @@ A single slash command for Claude Code that maintains compressed project state a
 
 ## The problem
 
-Claude loses context every session. CLAUDE.md is the fix, but nobody maintains it — it bloats, goes stale, or never gets written.
+Claude loses context every session. CLAUDE.md is the fix, but it is not automatically maintained.
 
 ## The solution
 
@@ -27,12 +27,10 @@ Claude will rewrite your `CLAUDE.md` to reflect current project state, decisions
 ## Format
 
 ```
-goal: what we're shipping
-stack: tech choices
+goal: what we're doing
+stack: tech picks
 decisions: what was decided and why
 blocked: current blockers
 dead: abandoned approaches (never revisit)
 next: concrete next steps
 ```
-
-The dead-ends section is the most valuable — it prevents you and Claude from rediscovering the same wrong answers.
